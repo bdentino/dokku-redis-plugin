@@ -9,7 +9,7 @@ REDIS_APP_IMAGE_ID=$(docker images | grep "$REDIS_IMAGE" | awk '{print $3}')
 if [[ -n $REDIS_APP_IMAGE_ID ]]; then
   echo "-----> Checking status of Redis"
 
-  REDIS_IMAGE=$(docker images | grep "luxifer/redis " | awk '{print $3}')
+  REDIS_IMAGE=$(docker images | grep "bdentino/redis " | awk '{print $3}')
   if [[ -z $REDIS_IMAGE ]]; then
     echo "Redis image not found...Did you run 'dokku plugins-install' ?"
     exit 1
