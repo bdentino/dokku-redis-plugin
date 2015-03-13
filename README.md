@@ -94,4 +94,5 @@ Environment Variables
 REDIS_URL
 REDIS_PORT
 REDIS_IP
+REDIS_HOST (same value as REDIS_IP...some apps expect one, some apps expect the other. hooray for standardization.)
 ```
