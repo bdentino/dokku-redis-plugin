@@ -104,6 +104,7 @@ case "$1" in
             # eg, not setting them via modifying the app's ENV file
             dokku config:set $APP "REDIS_URL=redis://$IP:6379"
             dokku config:set $APP "REDIS_IP=$IP"
+            dokku config:set $APP "REDIS_HOST=$IP"
             dokku config:set $APP "REDIS_PORT=6379"
             echo
             echo "-----> $APP linked to $REDIS_IMAGE container"
